@@ -1222,7 +1222,7 @@ blockquote {
     text-transform: capitalize;
 }
 /* ==========================================================================
-  ::12.  Testimonial Section Style
+  ::12. Base Testimonial Section Style
    ========================================================================== */
    #testimonial{
       padding: 80px 0px;  
@@ -1236,69 +1236,109 @@ blockquote {
     border-radius: 50%;
     margin: 0 25px 15px 0;
 }
-.testimonial .pic img{ /*Image sizing*/
-    width: 100%;
-    height: auto;
-    border-radius: 0%;
+
+/* ==========================================================================
+  ::12.1  Imported Section Style
+   ========================================================================== */
+  .clients_testimonial_area .client-name > h5 {
+    font-size: 35px;
+    color: #343434;
+    margin-bottom: 9px;
 }
-.testimonial .testimonial-profile{
-    display: inline-block;
-    position: relative;
-    top: 15px;
+
+
+
+.clients_testimonial_area .client-name > p {
+    color: #3e8cf7;
 }
-.testimonial .title{
+
+.clients_testimonial_area ul>li{
+    color: #f8f9fa;
+}
+
+.clients_testimonial_area .slick-dots {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.clients_testimonial_area .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    text-indent: -999999999999999999999999px;
+    border: 1px solid #a49fba;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 5.5px;
+    outline: none;
+}
+
+.clients_testimonial_area .slick-dots li.slick-active button {
+    background-color: #2a3855;
+    border-color: #2a3855;
+}
+
+.clients_testimonial_area .slick-slide.client-thumbnail {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 129px;
+}
+
+
+.clients_testimonial_area .slick-slide img {
     display: block;
-    font-size: 20px;
-    font-weight: 600;
-    color: #161918;
-    text-transform: capitalize;
-    margin: 0 0 7px 0;
+    width: 55px !important;
+    height: 55px !important;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
-.testimonial .post{
-    display: block;
-    font-size: 14px;
-    color: #5d7aa7;
+
+.clients_testimonial_area .slick-slide.slick-current img {
+    width: 105px !important;
+    height: 100px !important;
 }
-.testimonial .description{
-    padding: 20px 22px;
-    background: #161918;
-    font-size: 15px;
-    color: #fff;
-    line-height: 25px;
-    margin: 0;
-    position: relative;
-}
-.testimonial .description:before,
-.testimonial .description:after{
-    content: "";
-    border-width: 18px 0 0 18px;
-    border-style: solid;
-    border-color: #161918 transparent transparent;
+
+.clients_testimonial_area .slick-arrow {
     position: absolute;
-    bottom: -18px;
+    width: 30px ;
+    background-color: #fff;
+    height: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #b5aec4;
+    display: block;
+    line-height: 550%;
     left: 0;
+    z-index: 90;
+    cursor: pointer;
 }
-.testimonial .description:after{
-    border-width: 18px 18px 0 0;
+
+.clients_testimonial_area .slick-arrow.fa-angle-right {
     left: auto;
     right: 0;
+    top: 0;
 }
-.owl-theme .owl-controls{
-    margin-top: 10px;
-    margin-left: 30px;
-}
-.owl-theme .owl-controls .owl-buttons div{
-    opacity: 0.8;
-    background: #fff;
-}
-.owl-prev:before,
-.owl-next:before{
-    content: "\f053";
-    font-family: "Font Awesome 5 Free"; font-weight: 900;
-    font-size: 20px;
-    color: #161918;
-}
-.owl-next:before{ content: "\f054"; }
+
+
+
 
 /*-------------------------------------------------------------------------------------
     Latest Blog
@@ -1487,123 +1527,6 @@ blockquote {
    color: #161918;
    border:1px solid #161918;
 }
-
-/* ==========================================================================
-  ::12.  Testimonial Section Style
-   ========================================================================== */
-  .clients_testimonial_area .client-name > h5 {
-    font-size: 22px;
-    color: #343434;
-    margin-bottom: 0px;
-}
-
-.clients_testimonial_area .star-icon > i {
-    font-size: 18px;
-    color: #f1b922;
-}
-
-.clients_testimonial_area .client-description > p {
-    max-width: 1010px;
-    margin: auto;
-    margin-bottom: 15px;
-    font-size: 15px;
-}
-
-.clients_testimonial_area .client > i {
-    font-size: 30px;
-    color: #09aba9;
-    margin-bottom: 20px;
-}
-
-.clients_testimonial_area .client-name > p {
-    color: #b5aec4;
-}
-
-.clients_testimonial_area ul>li{
-    color: #f8f9fa;
-}
-
-.clients_testimonial_area .slick-dots {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
-.clients_testimonial_area .slick-dots li button {
-    width: 12px;
-    height: 12px;
-    text-indent: -999999999999999999999999px;
-    border: 1px solid #a49fba;
-    background-color: #fff;
-    border-radius: 50%;
-    margin: 5.5px;
-    outline: none;
-}
-
-.clients_testimonial_area .slick-dots li.slick-active button {
-    background-color: #2a3855;
-    border-color: #2a3855;
-}
-
-.clients_testimonial_area .slick-slide.client-thumbnail {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 129px;
-}
-
-
-.clients_testimonial_area .slick-slide img {
-    display: block;
-    width: 60px !important;
-    height: 60px !important;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.clients_testimonial_area .slick-slide.slick-current img {
-    width: 115px !important;
-    height: 115px !important;
-}
-
-.clients_testimonial_area .slick-arrow {
-    position: absolute;
-    width: 30px ;
-    background-color: #fff;
-    height: 100%;
-    text-align: center;
-    font-size: 24px;
-    color: #b5aec4;
-    display: block;
-    line-height: 550%;
-    left: 0;
-    z-index: 90;
-    cursor: pointer;
-}
-
-.clients_testimonial_area .slick-arrow.fa-angle-right {
-    left: auto;
-    right: 0;
-    top: 0;
-}
-
 
 
 
