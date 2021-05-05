@@ -373,7 +373,7 @@ blockquote {
   transition: all 400ms linear 0s;
 }
 
-.main_navbar.sticky {
+.main_navbar {
    background: #FAFAFA!important;
     box-shadow: 0 -1px 10px rgba(193, 174, 174, 0.1);
     -webkit-box-shadow: 0 -1px 10px #7c7456;
@@ -1451,7 +1451,7 @@ blockquote {
 }
 
 .single-cl {
-   padding: 30px 20px;
+   padding: 20px 20px;
    padding-right: 0;
 }
 
@@ -1727,3 +1727,15 @@ blockquote {
     color: #fff;
 }
 
+/*-------------------------------------------------------------------------------------
+    Our Partners CSS
+---------------------------------------------------------------------------------------*/
+
+#our-partners {
+    background:  #f7ce3e;
+    padding: 70px 0 100px;
+}
+
+#our-partners h2{
+    color: #25231d;
+}
